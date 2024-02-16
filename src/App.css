@@ -1,0 +1,70 @@
+@import url('./css-reset.css');
+
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --gray-blue: hsl(217, 19%, 38%);
+    --dark-gray-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --font-size: 1.75rem;
+    --ff: 'Manrope';
+    --fw: 800;
+}
+/* TODO: 
+    use margin to center instead of flex
+    fix dice image/ center div
+    work on git
+*/
+body {
+    background-color: var(--dark-blue);
+    margin-top: 4rem;
+    padding-inline: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-gray-blue);
+    font-family: var(--ff);
+    font-weight: var(--fw);
+    font-size: var(--font-size);
+    color: var(--light-cyan);
+    border-radius: 0.5rem;
+}
+
+header {
+    color: var(--neon-green);
+    text-transform: uppercase;
+}
+
+section {
+
+}
+
+.icon-wrapper {
+    background-color: var(--neon-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    max-width: 20%;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+}
+
+.sr-only:not(:focus):not(:active) {
+    Clip: rect(0 0 0 0);
+    Clip-path: inset(50%);
+    Height: 1px;
+    Overflow: hidden;
+    Position: absolute;
+    White-space: no wrap;
+    Width: 1px;
+}
+
+@media(min-width: 50rem) {
+    /* add different img when in desktop */
+}
+
