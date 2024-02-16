@@ -1,4 +1,4 @@
-// import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
 import dividerMobile from '../public/images/pattern-divider-mobile.svg'
 import dice from '../public/images/icon-dice.svg';
