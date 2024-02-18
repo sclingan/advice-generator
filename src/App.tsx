@@ -5,6 +5,20 @@ import dice from '../public/images/icon-dice.svg';
 
 function App() {
 
+  const [advice, setAdvice] = useState();
+  const url = 'https://api.adviceslip.com/advice'
+
+  useEffect(() => {
+    fetch(url).then(res => {
+      const response = res.json();
+      JSON.stringify(response);
+      console.log(response);
+      // console.log(res);
+    }).then(result => {
+      console.log(result);
+      // setAdvice(data);
+    })
+  }, []);
   return (
     <main>
       <header>
@@ -12,7 +26,7 @@ function App() {
         <p>Advice #</p>
       </header>
       <section>
-        <p>"{/*<!-- Advice text goes here -->*/}"</p>
+        <p>"{advice}"</p>
         <img src={dividerMobile} alt=""></img>
         <div className='icon-wrapper'>
         <img src={dice} alt="" className='icon'></img>
