@@ -5,8 +5,8 @@ import dice from '../public/images/icon-dice.svg';
 
 function App() {
 
-  const [advice, setAdvice] = useState('hello');
-  const [id, setId] = useState(1);
+  const [advice, setAdvice] = useState();
+  const [id, setId] = useState();
   const url = 'https://api.adviceslip.com/advice'
 
   
@@ -25,12 +25,11 @@ function App() {
       </header>
       <section>
         <p>"{advice}"</p>
-        <img src={dividerMobile} alt=""></img>
-        <div className='icon-wrapper'>
-        <button onClick={getAdvice}><img src={dice} alt="" className='icon'></img></button>
-        </div>
+        <img src={dividerMobile} alt="light grey divider line"></img>
       </section>
-   
+      <div className='icon-wrapper'>
+        <button onClick={getAdvice}><img src={dice} alt="neon green dice" className='icon'></img></button>
+        </div>
     </main>
   )
 }

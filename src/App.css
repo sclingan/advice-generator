@@ -11,8 +11,8 @@
     --fw: 800;
 }
 /* TODO: 
-    use margin to center instead of flex
     fix dice image/ center div
+    add desktop/divider img to media query
 */
 body {
     background-color: var(--dark-blue);
@@ -39,18 +39,28 @@ header {
 }
 
 section {
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 0.5rem;
+    padding-inline: 1rem;
 }
 
 .icon-wrapper {
-    background-color: var(--neon-green);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    background-color: var(--neon-green);
     border-radius: 50%;
-    max-width: 20%;
     padding-inline: 1rem;
     padding-block: 1rem;
+    max-width: 4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+button {
+    background-color: var(--neon-green);
+    border: none;
 }
 
 .sr-only:not(:focus):not(:active) {
