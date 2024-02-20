@@ -65,7 +65,7 @@ to getting data to display.
 ### Useful resources
 
 - (https://developer.mozilla.org/en-US/) - A great place for all things web dev!
-- [Example resource 2](https://validator.w3.org/) - Always test your websites.
+- (https://validator.w3.org/) - Always test your websites.
 
 
 ## Author
