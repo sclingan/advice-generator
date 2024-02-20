@@ -10,10 +10,7 @@
     --ff: 'Manrope';
     --fw: 800;
 }
-/* TODO: 
-    fix dice image/ center div
-    add desktop/divider img to media query
-*/
+
 body {
     background-color: var(--dark-blue);
     margin-top: 4rem;
@@ -46,6 +43,10 @@ section {
     padding-inline: 1rem;
 }
 
+.advice {
+    padding-bottom: 2rem;
+}
+
 .icon-wrapper {
     display: flex;
     flex-direction: column;
@@ -73,7 +74,5 @@ button {
     Width: 1px;
 }
 
-@media(min-width: 50rem) {
-    /* add different img when in desktop */
-}
+
 

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import dividerMobile from '../public/images/pattern-divider-mobile.svg'
+import dividerDesktop from '../public/images/pattern-divider-desktop.svg'
 import dice from '../public/images/icon-dice.svg';
 
 function App() {
@@ -24,8 +25,11 @@ function App() {
         <p>Advice # {id}</p>
       </header>
       <section>
-        <p>"{advice}"</p>
-        <img src={dividerMobile} alt="light grey divider line"></img>
+        <p className='advice'>"{advice}"</p>
+        <picture>
+          <source srcSet={dividerDesktop} media='(min-width: 50rem)'></source>
+          <img src={dividerMobile} alt="light grey divider line"></img>
+        </picture>
       </section>
       <div className='icon-wrapper'>
         <button onClick={getAdvice}><img src={dice} alt="neon green dice" className='icon'></img></button>
